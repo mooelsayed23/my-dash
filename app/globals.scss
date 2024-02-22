@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./styles/global.scss";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -16,15 +17,11 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+* {
+  scrollbar-width: thin !important;
+  scrollbar-color: #f7f7f7 transparent !important;
 }
+
 
 @layer utilities {
   .text-balance {

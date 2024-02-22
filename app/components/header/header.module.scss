@@ -1,0 +1,27 @@
+@import "../../styles/global.scss";
+
+.topheader {
+    height: $top-header-height;
+}
+
+.header {
+    width: 100%;
+    height: $header-height;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9 !important;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 4px #919191;
+    
+}
+
+.logo {
+    width: calc($sidbar-width - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

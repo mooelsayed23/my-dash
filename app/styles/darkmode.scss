@@ -1,0 +1,129 @@
+$dark-color: rgb(31, 31, 31);
+
+.darkmode {
+    background-color: $dark-color;
+    color: aliceblue;
+
+    .top-header,
+    header {
+        background-color: $dark-color;
+    }
+
+ .MuiBox-root * {
+            color: #fff;
+        }
+
+    .massege,
+    section,
+    .barChart,
+    .MuiBox-root {
+        background: $dark-color;
+        color: rgb(255, 255, 255);
+
+       
+
+        text {
+            fill: #ffffff !important;
+        }
+
+        h3,
+        h2 {
+            color: rgb(255, 255, 255);
+        }
+
+        .sticky,
+        p:last-child.cursor-pointer {
+            background: #282828;
+            color: rgb(255, 255, 255);
+        }
+
+        li:hover {
+            background: #b7b7b7 !important;
+
+            * {
+                color: #0f0f0f;
+            }
+
+        }
+
+        b {
+            background-color: #282828;
+        }
+    }
+
+    .natifgation,
+    .avater {
+        background-color: $dark-color;
+        color: aliceblue;
+
+        span,
+        div {
+            color: rgb(184, 188, 192);
+            background-color: $dark-color;
+        }
+
+        li:first-child,
+        li:last-child {
+            color: white;
+            background: #3a3a3a;
+        }
+
+        li:hover:not(li:first-child) {
+            * {
+                background: #b7b7b7 !important;
+                color: #000;
+            }
+        }
+    }
+
+
+
+    aside {
+
+        .selected,
+        li:hover {
+            background: #444444;
+        }
+
+        background: $dark-color;
+    }
+
+    main {
+        background-color: #121212;
+
+        .widget,
+        .featured,
+        .Barchart {
+            background-color: $dark-color;
+        }
+
+        table {
+            background-color: $dark-color;
+            box-shadow: aliceblue 0 0 4px;
+            border: #ffffff solid 1px;
+
+            th,
+            td,
+            button {
+                color: aliceblue;
+            }
+        }
+    }
+
+    a {
+        color: aliceblue;
+    }
+
+
+
+    .datatable {
+
+        div,
+        span,
+        button {
+            color: aliceblue;
+        }
+    }
+
+
+}

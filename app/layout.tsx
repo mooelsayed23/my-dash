@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-
+import "./globals.scss";
+import Header from "./components/header/Header";
+import Sidbar from "./components/aside/Sidbar";
+import "./styles/darkmode.scss";
+import Theprovider from "./Theprovider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +19,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Theprovider>
+          <Header />
+          <div className="flex">
+            <Sidbar />
+            {children}
+          </div>
+        </Theprovider>
+      </body>
     </html>
   );
 }

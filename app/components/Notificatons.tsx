@@ -52,7 +52,7 @@ const Notificatons = () => {
               <a href="/" className="flex-shrink-0 w-1/5">
                 <Image
                   className="rounded-full w-11 h-11"
-                  src="/1.jpeg"
+                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=398&q=80"
                   alt="Joseph image"
                   width={100}
                   height={100}

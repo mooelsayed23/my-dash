@@ -18,7 +18,3 @@ const nextConfig = {
   };
   
   export default nextConfig;
-<<<<<<< Updated upstream
-  
-=======
->>>>>>> Stashed changes

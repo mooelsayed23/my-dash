@@ -16,12 +16,6 @@ const nextConfig = {
       ],
     },
   };
-<<<<<<< HEAD
   
   export default nextConfig;
   
-=======
-  
-  export default nextConfig;
-  
->>>>>>> 3ce802f (Committing local changes)

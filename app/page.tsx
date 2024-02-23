@@ -8,8 +8,8 @@ import CollapsibleTable from "./components/table/Table";
 import { MdDashboard } from "react-icons/md";
 export default function Home() {
   return (
-    <main className=" bg-gray-100 grow p-2 xs:p-5 sm:p-10">
-      <p className="-mt-5 mb-5 text-3xl flex items-center font-black"><MdDashboard/>DashBoard</p>
+    <main className=" bg-gray-100 grow px-2 xs:px-5 sm:px-10">
+      <p className="my-2 sm:my-4 lg:my-5 text-3xl flex items-center font-black"><MdDashboard/>DashBoard</p>
       {/* Widget */}
       <div className="flex flex-wrap grow gap-3">
         <span className="grow flex flex-wrap gap-3">

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Notificatons from "../Notificatons";
 import Massege from "../Massege";
 import { BsMoonStars } from "react-icons/bs";
-import {  PiSunHorizonBold } from "react-icons/pi";
+import { PiSunHorizonBold } from "react-icons/pi";
 
 const Darkmode = () => {
   const [uMode, setUMode] = useState(false);

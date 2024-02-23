@@ -19,7 +19,8 @@ const Massege = () => {
         }
       ></button>
       <div
-        className={`massege p-2 pt-0 absolute shadow-lg bg-white py-2 z-20 min-w-full rounded-lg -right-32 lg:right-0 w-64 sm:w-[410px] max-h-[500px] overflow-auto ${
+        className={`massege p-1 pt-0 absolute shadow-lg bg-white py-2 z-20  rounded-lg 
+        -right-[120px] sm:right-0 min-w-64 xs:min-w-72 sm:min-w-80 md:min-w-96 max-h-[500px] overflow-auto ${
           show ? "block absolute right-0" : "hidden"
         }`}
       >

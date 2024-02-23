@@ -38,7 +38,7 @@ const Notificatons = () => {
         <ul
           className={` ${
             show
-              ? "natifgation block absolute -right-16 sm:right-0 z-20 rounded space-y-3 list-none min-w-64 sm:min-w-72 max-h-[500px] bg-white text-slate-800"
+              ? "natifgation px-1 xs:px-2 sm:px-3 md:px-4 block absolute -right-16 sm:right-0 z-20 rounded space-y-3 list-none  min-w-64 xs:min-w-72 sm:min-w-80 md:min-w-96 max-h-[500px] bg-white text-slate-800"
               : "hidden"
           }
           ${vall || count === 1 ? "overflow-y-auto" : "overflow-y-hidden"}`}
@@ -64,10 +64,8 @@ const Notificatons = () => {
                   Joseph Mcfall
                 </a>{" "}
                 and <span className="font-medium text-gray-900 ">5 others</span>{" "}
-                started following you.
-                <span className="flex justify-end text-slate-500 text-xs  text-center">
-                  1 min
-                </span>
+                started following you. 1 min
+                
               </span>
             </div>
           </li>
@@ -89,10 +87,8 @@ const Notificatons = () => {
                   Sara Salah
                 </a>{" "}
                 and <span className="font-medium text-gray-900 ">5 others</span>{" "}
-                replied on the artical.{" "}
-                <span className="flex justify-end text-slate-500 text-xs w-full text-center">
-                  2 min
-                </span>
+                replied on the artical. {"  2 min"}
+                
               </span>
             </div>
           </li>
@@ -115,10 +111,8 @@ const Notificatons = () => {
                 </a>{" "}
                 and{" "}
                 <span className="font-medium text-gray-900 ">12 others</span>{" "}
-                replied on the artical.
-                <span className="flex justify-end  text-slate-500 text-xs w-full">
-                  2 min
-                </span>
+                replied on the artical. 2 min
+                
               </span>
             </div>
           </li>
@@ -140,10 +134,8 @@ const Notificatons = () => {
                   Jane Doe
                 </a>{" "}
                 and <span className="font-medium text-gray-900 ">2 others</span>{" "}
-                Test with TDD.
-                <span className="flex justify-end text-slate-500 text-xs w-full text-center">
-                  4 min
-                </span>
+                Test with TDD. 4 min
+                
               </span>
             </div>
           </li>
@@ -166,10 +158,8 @@ const Notificatons = () => {
                 </a>{" "}
                 and{" "}
                 <span className="font-medium text-gray-900 ">17 others</span>{" "}
-                Tstart following you.
-                <span className="flex justify-end text-slate-500 text-xs w-full text-center">
-                  6 min
-                </span>
+                Tstart following you. 6 min
+               
               </span>
             </div>
           </li>
@@ -191,10 +181,8 @@ const Notificatons = () => {
                   Sara Salah
                 </a>{" "}
                 and <span className="font-medium text-gray-900 ">5 others</span>{" "}
-                replied on the artical.
-                <span className="flex justify-end text-slate-500 text-xs w-full text-center">
-                  7 min
-                </span>
+                replied on the artical. 7 min
+                
               </span>
             </div>
           </li>
@@ -217,10 +205,8 @@ const Notificatons = () => {
                 </a>{" "}
                 and{" "}
                 <span className="font-medium text-gray-900 ">12 others</span>{" "}
-                replied on the artical.
-                <span className="flex justify-end text-slate-500 text-xs w-full text-center">
-                  8 min
-                </span>
+                replied on the artical. 8 min
+                
               </span>
             </div>
           </li>
@@ -242,10 +228,8 @@ const Notificatons = () => {
                   Jane Doe
                 </a>{" "}
                 and <span className="font-medium text-gray-900 ">2 others</span>{" "}
-                Test with TDD.
-                <span className="flex justify-end text-slate-500 text-xs w-full text-center">
-                  10 min
-                </span>
+                Test with TDD.  10 min
+               
               </span>
             </div>
           </li>

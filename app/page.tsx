@@ -26,7 +26,7 @@ export default function Home() {
         <Charbar />
         <Featured />
       </div>
-      <div className="mt-10">
+      <div className="mt-10 overflow-x-hidden max-w-full">
         <CollapsibleTable />
       </div>
     </main>

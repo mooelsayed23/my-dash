@@ -106,6 +106,7 @@ $dark-color: rgb(31, 31, 31);
             td,
             button {
                 color: aliceblue;
+                background-color: $dark-color !important;
             }
         }
     }

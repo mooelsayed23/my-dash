@@ -29,7 +29,7 @@ function Sidebar() {
       ${count ? "flex bslg:hidden" : "hidden bslg:flex"}`}
     >
       <ul className="w-full flex flex-col mx-5">
-        <div className="">
+        <div>
           <div>
             <Link href="/">
               <li
@@ -79,9 +79,8 @@ function Sidebar() {
                 <span>Orders</span>
               </li>
             </Link>
-            
           </div>
-          
+
           <p className="title">SERVICE</p>
           <div>
             <Link href="/health">

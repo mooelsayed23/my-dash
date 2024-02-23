@@ -1,15 +1,15 @@
 @import "../../styles/global.scss";
 
 aside {
+  width: $sidbar-width;
+  overflow-x: hidden;
+  position: sticky;
   height: calc(100vh - $header-height);
   flex-shrink: 0;
   overflow-y: auto;
-  overflow-x: hidden;
-  width: $sidbar-width;
   color: rgb(0, 0, 0);
   background-color: #ffffff;
   box-shadow: 1px 0px 3px #919191;
-  position: sticky;
   top: calc($header-height);
   z-index: 8;
   ul {
@@ -62,10 +62,12 @@ aside {
     .selected,
     li:hover {
       background-color: #f9fafb;
-
-      // svg {
-      //   color: #ffffff;
-      // }
     }
   }
+}
+
+@media(max-width: 991.98px){
+aside{
+  position: absolute;
+}
 }

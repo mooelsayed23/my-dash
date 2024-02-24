@@ -9,9 +9,9 @@ $dark-color: rgb(31, 31, 31);
         background-color: $dark-color;
     }
 
- .MuiBox-root * {
-            color: #fff;
-        }
+    .MuiBox-root * {
+        color: #fff;
+    }
 
     .massege,
     section,
@@ -20,7 +20,7 @@ $dark-color: rgb(31, 31, 31);
         background: $dark-color;
         color: rgb(255, 255, 255);
 
-       
+
 
         text {
             fill: #ffffff !important;
@@ -97,8 +97,9 @@ $dark-color: rgb(31, 31, 31);
             background-color: $dark-color;
         }
 
-        
+
     }
+
     table {
         background-color: $dark-color !important;
         box-shadow: aliceblue 0 0 4px;
@@ -106,11 +107,13 @@ $dark-color: rgb(31, 31, 31);
 
         th,
         td,
-        button {
-            color: aliceblue;
+        button,
+        span {
+            color: aliceblue !important;
             background-color: $dark-color !important;
         }
     }
+
     a {
         color: aliceblue;
     }
@@ -125,10 +128,14 @@ $dark-color: rgb(31, 31, 31);
             color: aliceblue;
         }
     }
-    .group.flex.flex-col.w-full.sm\:max-w-\[44\%\]{
-        svg{
+
+    .group.flex.flex-col.w-full.sm\:max-w-\[44\%\] {
+        svg {
             color: #878787;
         }
     }
 
+    .z-10.inline-flex.flex-col.items-center.justify-center.subpixel-antialiased.outline-none.box-border.text-small.bg-content1.rounded-large.shadow-medium.w-full.p-1.min-w-\[200px\] {
+        background: $dark-color;
+    }
 }

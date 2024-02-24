@@ -1,3 +1,4 @@
+// @ts-ignore
 "use client";
 import React from "react";
 import Healthcard from "../components/healthcard";
@@ -242,6 +243,7 @@ const page = () => {
       </div>
 
       <div className="flex justify-between w-full flex-wrap">
+        
         <Healthcard percentage={44} text="data 2000" />
         <Healthcard percentage={67} text="data 2000" />
         <Healthcard percentage={77} text="data 2000" />

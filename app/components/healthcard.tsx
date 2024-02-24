@@ -1,3 +1,4 @@
+"use client";
 import {
   CircularProgress,
   Card,
@@ -22,7 +23,7 @@ const Healthcard = ({ percentage = 70, text = "" }) => {
         className={`w-[240px] h-[240px] shadow-lg border-none mb-5 mx-5 justify-center grow bg-gradient-to-br ${range}`}
       >
         <CardBody className="justify-center items-center pb-0">
-          <CircularProgress
+          <CircularProgress aria-label="Loading progress"
             classNames={{
               svg: "w-36 h-36 drop-shadow-md",
               indicator: "stroke-white",

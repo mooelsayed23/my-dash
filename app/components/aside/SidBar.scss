@@ -68,7 +68,7 @@ aside {
 
 @media(max-width: 991.98px){
 aside{
-  position: absolute;
+  position: fixed;
   top: calc($header-height);
   
 }

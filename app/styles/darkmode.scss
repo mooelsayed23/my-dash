@@ -138,4 +138,19 @@ $dark-color: rgb(31, 31, 31);
     .z-10.inline-flex.flex-col.items-center.justify-center.subpixel-antialiased.outline-none.box-border.text-small.bg-content1.rounded-large.shadow-medium.w-full.p-1.min-w-\[200px\] {
         background: $dark-color;
     }
+    .health{
+        background: $dark-color;
+        color: aliceblue;
+        a,li,span.text-black{
+            background: $dark-color;
+        color: aliceblue;
+        }
+        div.bg-white{
+            background-color: #444444;
+            color: whitesmoke;
+        }
+        div.text-3xl{
+            color: whitesmoke;
+        }
+    }
 }

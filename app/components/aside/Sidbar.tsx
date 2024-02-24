@@ -94,7 +94,7 @@ function Sidebar() {
                 <span>System Health</span>
               </li>
             </Link>
-            <Link href="/logs">
+            <Link href="#">
               <li
                 className={selectedItem === 8 ? "selected" : ""}
                 onClick={() => handleItemClick(8)}
@@ -105,7 +105,7 @@ function Sidebar() {
                 <span>Logs</span>
               </li>
             </Link>
-            <Link href="/settings">
+            <Link href="#">
               <li
                 className={selectedItem === 9 ? "selected" : ""}
                 onClick={() => handleItemClick(9)}
@@ -119,7 +119,7 @@ function Sidebar() {
           </div>
           <p className="title">USER</p>
           <div>
-            <Link href="/profile">
+            <Link href="/#">
               <li
                 className={selectedItem === 10 ? "selected" : ""}
                 onClick={() => handleItemClick(10)}
@@ -130,7 +130,7 @@ function Sidebar() {
                 <span>Profile</span>
               </li>
             </Link>
-            <Link href="/logout">
+            <Link href="#">
               <li
                 className={selectedItem === 11 ? "selected" : ""}
                 onClick={() => handleItemClick(11)}

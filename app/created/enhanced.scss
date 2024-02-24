@@ -5,28 +5,30 @@
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .product-table th,td{
     padding: 10px;
+    
 }
 .product-table th{
     position: relative;
     z-index: 10;
+    
 }
 .product-table thead tr th::after{
     content: "";
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 95%;
+    width: 100%;
     height: 40px;
     translate: -50% -50%;
     background-color: rgb(125, 201, 255);
     z-index: -1;
-    margin-right: 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }

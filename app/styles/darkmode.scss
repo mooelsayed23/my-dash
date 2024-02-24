@@ -97,20 +97,20 @@ $dark-color: rgb(31, 31, 31);
             background-color: $dark-color;
         }
 
-        table {
-            background-color: $dark-color;
-            box-shadow: aliceblue 0 0 4px;
-            border: #ffffff solid 1px;
+        
+    }
+    table {
+        background-color: $dark-color !important;
+        box-shadow: aliceblue 0 0 4px;
+        border: #ffffff solid 1px;
 
-            th,
-            td,
-            button {
-                color: aliceblue;
-                background-color: $dark-color !important;
-            }
+        th,
+        td,
+        button {
+            color: aliceblue;
+            background-color: $dark-color !important;
         }
     }
-
     a {
         color: aliceblue;
     }
@@ -125,6 +125,10 @@ $dark-color: rgb(31, 31, 31);
             color: aliceblue;
         }
     }
-
+    .group.flex.flex-col.w-full.sm\:max-w-\[44\%\]{
+        svg{
+            color: #878787;
+        }
+    }
 
 }

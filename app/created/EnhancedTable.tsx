@@ -74,8 +74,9 @@ const EnhancedTable: React.FC<EnhancedTableProps> = ({ data }) => {
   };
 
   return (
-    <div className="w-full grow overflow-x-hidden mx-2 mb-10 text-nowrap">
+    <div className="w-full grow overflow-x-hidden sm:px-5 py-5 pt-0 text-nowrap shadow-lg p-3">
       <p className="text-4xl self-start mt-5 flex"><LiaStoreAltSolid className="icon" /> Product</p>
+      <div className="shadow-2xl mt-5 sm:px-3 md:px-8 py-8 pt-0 rounded-2xl overflow-x-auto">
       <table className=" text-center w-full product-table">
         <thead >
           <tr className="text-center h-24">
@@ -162,6 +163,7 @@ const EnhancedTable: React.FC<EnhancedTableProps> = ({ data }) => {
           </select>
         </div>
       </section>
+      </div>
     </div>
   );
 };

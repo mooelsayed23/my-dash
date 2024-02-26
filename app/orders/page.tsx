@@ -87,7 +87,7 @@ const App: React.FC = () => {
     },
     {
       key: 2,
-      name: "iphon",
+      name: "iphone",
       platform: "iOS",
       version: "13.3.4.5654",
       upgradeNum: 900,
@@ -96,7 +96,7 @@ const App: React.FC = () => {
     },
     {
       key: 3,
-      name: "iphon",
+      name: "ipad",
       platform: "iOS",
       version: "14.3.4.5654",
       upgradeNum: 900,

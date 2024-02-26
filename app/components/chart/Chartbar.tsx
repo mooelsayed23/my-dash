@@ -45,7 +45,7 @@ export default function BarAnimation() {
   };
 
   return (
-    <div className="barChart">
+    <div className="barChart ps-2">
         <BarChart
           height={300}
           series={series

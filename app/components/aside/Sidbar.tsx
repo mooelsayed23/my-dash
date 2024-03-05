@@ -81,7 +81,6 @@ function Sidebar() {
             </Link>
           </div>
 
-          <p className="title">SERVICE</p>
           <div>
             <Link href="/health">
               <li
@@ -105,7 +104,12 @@ function Sidebar() {
                 <span>Logs</span>
               </li>
             </Link>
-            <Link href="#">
+            
+          </div>
+
+          <p className="title">USER</p>
+          <div>
+          <Link href="/">
               <li
                 className={selectedItem === 9 ? "selected" : ""}
                 onClick={() => handleItemClick(9)}
@@ -116,10 +120,7 @@ function Sidebar() {
                 <span>Settings</span>
               </li>
             </Link>
-          </div>
-          <p className="title">USER</p>
-          <div>
-            <Link href="/#">
+            <Link href="/">
               <li
                 className={selectedItem === 10 ? "selected" : ""}
                 onClick={() => handleItemClick(10)}
@@ -130,7 +131,7 @@ function Sidebar() {
                 <span>Profile</span>
               </li>
             </Link>
-            <Link href="#">
+            <Link href="/">
               <li
                 className={selectedItem === 11 ? "selected" : ""}
                 onClick={() => handleItemClick(11)}

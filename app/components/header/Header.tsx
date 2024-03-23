@@ -32,29 +32,31 @@ const Header = () => {
         </div>
       </div>
 
-      <header
-        className={`${headstyles.header} bslg:bg-white flex justify-between px-3 xs:px-8 max-w-full`}
-      >
-        <div className="h-full flex">
-          <div
-            className={`${headstyles.logo}  size-6 h-full `}
-            onClick={() => dispatch(toggle())}
-          >
-            <TfiMenu className="icon size-6" />
-          </div>
-          <div className={`${headstyles.logo} hidden bslg:flex h-full `}>
-            Dashboard
-          </div>
-        </div>
-
-        <div className="flex justify-center items-center flex-grow">
-          <div className="search border rounded-md justify-between items-center hidden sm:flex ms-7">
-            <Search id="search" />
+      <header className={`w-full bg-white ${headstyles.header}`}>
+        <div
+          className={` bslg:bg-white flex justify-between w-11/12 mx-auto items-center`}
+        >
+          <div className="h-full flex items-center">
+            <div
+              className={`${headstyles.logo}  size-6 h-full `}
+              onClick={() => dispatch(toggle())}
+            >
+              <TfiMenu className="icon size-6" />
+            </div>
+            <div className={`${headstyles.logo} hidden bslg:flex h-full `}>
+              Dashboard
+            </div>
           </div>
 
-          <Darkmode />
+          <div className="flex justify-center items-center flex-grow">
+            <div className="search border rounded-md justify-between items-center hidden sm:flex ms-7">
+              <Search id="search" />
+            </div>
+
+            <Darkmode />
+          </div>
+          <Avatar />
         </div>
-        <Avatar />
       </header>
     </>
   );

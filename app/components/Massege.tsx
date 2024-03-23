@@ -6,9 +6,9 @@ import { MdChatBubbleOutline } from "react-icons/md";
 const Massege = () => {
   const [show, setshow] = useState(false);
   return (
-    <div className=" relative">
+    <div className=" relative flex items-center">
       <button onClick={() => setshow(!show)} className="item relative">
-        <MdChatBubbleOutline className="icon size-6" />
+        <MdChatBubbleOutline className="icon size-7 text-slate-600" />
       </button>
       <button
         onClick={() => setshow(false)}
@@ -18,110 +18,114 @@ const Massege = () => {
             : ""
         }
       ></button>
-      <div
-        className={`massege p-1 pt-0 absolute shadow-lg bg-white py-2 z-20  rounded-lg 
+      <div className="">
+        <div
+          className={`massege mr-2 pt-0 absolute shadow-lg bg-white py-2 z-20 mt-8 rounded-lg 
         -right-[120px] sm:right-0 min-w-64 xs:min-w-72 sm:min-w-80 md:min-w-96 max-h-[500px] overflow-auto ${
           show ? "block absolute right-0" : "hidden"
         }`}
-      >
-        <div className="flex items-center justify-between  px-4 sticky top-0 bg-white shadow py-3">
-          <b className="text-xs text-blue-500 cursor-pointer hover:text-green-400">
-            new massege
+        >
+          <div className="flex items-center justify-between  px-4 sticky top-0 bg-white shadow py-3">
+            <b className="text-xs text-blue-500 cursor-pointer hover:text-green-400">
+              new massege
+            </b>
+            <i
+              className="text-xs text-blue-500 cursor-pointer hover:text-green-400"
+              onClick={() => setshow(!show)}
+            >
+              Mark as read
+            </i>
+          </div>
+          <ul className="divide-y">
+            <li className="py-4 px-4 flex items-center hover:bg-gray-50 text-black text-sm cursor-pointer">
+              <Image
+                src="https://readymadeui.com/profile_2.webp"
+                className="w-12 h-12 rounded-full shrink-0"
+                width={100}
+                height={100}
+                alt="Joseph image"
+              />
+              <div className="ml-6">
+                <h3 className="text-sm text-[#333] font-semibold">
+                  new message from Samer
+                </h3>
+                <p className="text-xs text-gray-400 mt-2">
+                  Hello there, check this new items in from the your may
+                  interested from the motion school
+                </p>
+                <p className="text-xs text-blue-500 leading-3 mt-2">
+                  10 minutes ago
+                </p>
+              </div>
+            </li>
+            <li className="py-4 px-4 flex items-center hover:bg-gray-50 text-black text-sm cursor-pointer">
+              <Image
+                src="https://readymadeui.com/profile_3.webp"
+                className="w-12 h-12 rounded-full shrink-0"
+                width={100}
+                height={100}
+                alt="Joseph image"
+              />
+              <div className="ml-6">
+                <h3 className="text-sm text-[#333] font-semibold">
+                  new message from Haper
+                </h3>
+                <p className="text-xs text-gray-400 mt-2">
+                  Hello there, check this new items in from the your may
+                  interested from the motion school
+                </p>
+                <p className="text-xs text-blue-500 leading-3 mt-2">
+                  2 hours ago
+                </p>
+              </div>
+            </li>
+            <li className="py-4 px-4 flex items-center hover:bg-gray-50 text-black text-sm cursor-pointer">
+              <Image
+                src="https://readymadeui.com/profile_4.webp"
+                className="w-12 h-12 rounded-full shrink-0"
+                width={100}
+                height={100}
+                alt="Joseph image"
+              />
+              <div className="ml-6">
+                <h3 className="text-sm text-[#333] font-semibold">
+                  new message from San
+                </h3>
+                <p className="text-xs text-gray-400 mt-2">
+                  Hello there, check this new items in from the your may
+                  interested from the motion school
+                </p>
+                <p className="text-xs text-blue-500 leading-3 mt-2">
+                  1 day ago
+                </p>
+              </div>
+            </li>
+            <li className="py-4 px-4 flex items-center hover:bg-gray-50 text-black text-sm cursor-pointer">
+              <Image
+                src="https://readymadeui.com/profile_5.webp"
+                className="w-12 h-12 rounded-full shrink-0"
+                width={100}
+                height={100}
+                alt="Joseph image"
+              />
+              <div className="ml-6">
+                <h3 className="text-sm text-[#333] font-semibold">
+                  new message from Seeba
+                </h3>
+                <p className="text-xs text-gray-400 mt-2">
+                  Hello there, check this new items in from the your may
+                  interested from the motion school
+                </p>
+                <p className="text-xs text-blue-500 leading-3 mt-2">
+                  30 minutes ago
+                </p>
+              </div>
+            </li>
+          </ul>
+          <b className=" w-full bg-white shadow text-sm py-3 text-center font-bold hover:text-green-400  mb-0 inline-block text-blue-700 cursor-pointer">
+            View all massege
           </b>
-          <i
-            className="text-xs text-blue-500 cursor-pointer hover:text-green-400"
-            onClick={() => setshow(!show)}
-          >
-            Mark as read
-          </i>
         </div>
-        <ul className="divide-y">
-          <li className="py-4 px-4 flex items-center hover:bg-gray-50 text-black text-sm cursor-pointer">
-            <Image
-              src="https://readymadeui.com/profile_2.webp"
-              className="w-12 h-12 rounded-full shrink-0"
-              width={100}
-              height={100}
-              alt="Joseph image"
-            />
-            <div className="ml-6">
-              <h3 className="text-sm text-[#333] font-semibold">
-                new message from Samer
-              </h3>
-              <p className="text-xs text-gray-400 mt-2">
-                Hello there, check this new items in from the your may
-                interested from the motion school
-              </p>
-              <p className="text-xs text-blue-500 leading-3 mt-2">
-                10 minutes ago
-              </p>
-            </div>
-          </li>
-          <li className="py-4 px-4 flex items-center hover:bg-gray-50 text-black text-sm cursor-pointer">
-            <Image
-              src="https://readymadeui.com/profile_3.webp"
-              className="w-12 h-12 rounded-full shrink-0"
-              width={100}
-              height={100}
-              alt="Joseph image"
-            />
-            <div className="ml-6">
-              <h3 className="text-sm text-[#333] font-semibold">
-                new message from Haper
-              </h3>
-              <p className="text-xs text-gray-400 mt-2">
-                Hello there, check this new items in from the your may
-                interested from the motion school
-              </p>
-              <p className="text-xs text-blue-500 leading-3 mt-2">
-                2 hours ago
-              </p>
-            </div>
-          </li>
-          <li className="py-4 px-4 flex items-center hover:bg-gray-50 text-black text-sm cursor-pointer">
-            <Image
-              src="https://readymadeui.com/profile_4.webp"
-              className="w-12 h-12 rounded-full shrink-0"
-              width={100}
-              height={100}
-              alt="Joseph image"
-            />
-            <div className="ml-6">
-              <h3 className="text-sm text-[#333] font-semibold">
-                new message from San
-              </h3>
-              <p className="text-xs text-gray-400 mt-2">
-                Hello there, check this new items in from the your may
-                interested from the motion school
-              </p>
-              <p className="text-xs text-blue-500 leading-3 mt-2">1 day ago</p>
-            </div>
-          </li>
-          <li className="py-4 px-4 flex items-center hover:bg-gray-50 text-black text-sm cursor-pointer">
-            <Image
-              src="https://readymadeui.com/profile_5.webp"
-              className="w-12 h-12 rounded-full shrink-0"
-              width={100}
-              height={100}
-              alt="Joseph image"
-            />
-            <div className="ml-6">
-              <h3 className="text-sm text-[#333] font-semibold">
-                new message from Seeba
-              </h3>
-              <p className="text-xs text-gray-400 mt-2">
-                Hello there, check this new items in from the your may
-                interested from the motion school
-              </p>
-              <p className="text-xs text-blue-500 leading-3 mt-2">
-                30 minutes ago
-              </p>
-            </div>
-          </li>
-        </ul>
-        <b className=" w-full bg-white shadow text-sm py-3 text-center font-bold hover:text-green-400  mb-0 inline-block text-blue-700 cursor-pointer">
-          View all massege
-        </b>
       </div>
     </div>
   );

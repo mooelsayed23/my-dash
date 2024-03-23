@@ -31,7 +31,7 @@ const Darkmode = () => {
   return (
     <>
       <section className="items flex section items-center justify-center flex-grow space-x-10 lg:space-x-20 xl:space-x-32 2xl:space-x-50">
-        <button className="item relative">
+        <button className="item relative flex items-center">
           {uMode ? (
             <PiSunHorizonBold
               className="icon   size-6 border-b-white text-white"
@@ -39,7 +39,7 @@ const Darkmode = () => {
             />
           ) : (
             <BsMoonStars
-              className="icon   size-6 border-b-[#65676b] "
+              className="icon   size-7 border-b-[#65676b] text-gray-600"
               onClick={toggleMode}
             />
           )}

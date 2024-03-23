@@ -22,10 +22,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <Theprovider>
           <Header />
-          <div className="flex">
-            <Sidbar />
+          <Sidbar />
+          {/* <div className="flex">
             {children}
-          </div>
+          </div> */}
         </Theprovider>
       </body>
     </html>

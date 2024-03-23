@@ -15,11 +15,11 @@ const Avatar = () => {
     <>
       <div className={`item relative `}>
         <button type="button" onClick={hnafit}>
-          <div className="item relative">
+          <div className="item relative ">
             <Image
               src="/img/2.png"
               alt="a"
-              className="size-8  rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+              className="size-10  rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
               width={35}
               height={35}
               quality={55}
@@ -27,7 +27,7 @@ const Avatar = () => {
               placeholder="empty"
             />
             <span
-              className="top-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 
+              className="-top-1 -right-1 absolute  w-3.5 h-3.5 bg-blue-400 
           border-2 border-white dark:border-gray-800 rounded-full"
             ></span>
           </div>

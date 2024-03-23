@@ -36,14 +36,14 @@ const Avatar = () => {
           onClick={hnafit}
           className={
             show
-              ? "fixed w-screen h-screen top-0 bottom-0 right-0 left-0 z-10 bg-black/30"
+              ? "fixed w-screen h-screen top-0 bottom-0 right-0 left-0 z-10 "
               : ""
           }
         ></button>
         <ul
           className={` ${
             show
-              ? "block absolute right-0 w-52 p-1 z-20 avater list-none  text-black bg-white rounded"
+              ? "block absolute right-0 w-52 p-1 z-20 avater list-none shadow-lg text-black bg-white rounded"
               : "hidden"
           }
           ${vall ? "overflow-y-auto" : "overflow-y-hidden"}`}

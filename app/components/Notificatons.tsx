@@ -198,11 +198,12 @@ const Notificatons = () => {
             {usersData.map((user, index) => (
               <li
                 key={index}
-                className="w-full hover:bg-gray-100 flex items-stert py-1 text-black flex-wrap justify-between items-start"
+                className="w-full hover:bg-gray-50 cursor-pointer py-1
+                 flex items-stert text-black flex-wrap justify-between items-start "
               >
-                <a href="/" className="flex-shrink-0 w-1/6">
+                <a href="/" className="flex-shrink-0 w-1/6 self-center">
                   <Image
-                    className="rounded-full w-11 h-11 mx-auto"
+                    className="rounded-full w-11 h-11 mx-auto "
                     src={user.image}
                     alt={`${user.name} image`}
                     width={100}

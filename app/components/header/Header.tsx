@@ -34,7 +34,7 @@ const Header = () => {
 
       <header className={`w-full bg-white ${headstyles.header}`}>
         <div
-          className={` bslg:bg-white flex justify-between w-11/12 mx-auto items-center`}
+          className={` flex justify-between w-11/12 mx-auto items-center`}
         >
           <div className="h-full flex items-center">
             <div

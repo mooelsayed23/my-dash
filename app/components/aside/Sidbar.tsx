@@ -25,7 +25,7 @@ function Sidebar() {
   };
   return (
     <aside
-      className={` text-sm pt-6  
+      className={`text-xl pt-6  
       ${count ? "flex bslg:hidden" : "hidden bslg:flex"}`}
     >
       <ul className="w-full flex flex-col mx-5">

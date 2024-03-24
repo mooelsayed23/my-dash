@@ -27,6 +27,9 @@ const Widget = ({ type }) => {
             }}
           />
         ),
+        style: {
+          color: "bg-[#1489ed7a]",
+        },
       };
       break;
     case "order":
@@ -43,6 +46,9 @@ const Widget = ({ type }) => {
             }}
           />
         ),
+        style: {
+          color: "bg-[#daa5207a]",
+        },
       };
       break;
     case "earning":
@@ -56,6 +62,7 @@ const Widget = ({ type }) => {
             style={{ backgroundColor: "rgba(0, 128, 0, 0.2)", color: "green" }}
           />
         ),
+        style: { color: "bg-[#0080007a]" },
       };
       break;
     case "balance":
@@ -72,6 +79,9 @@ const Widget = ({ type }) => {
             }}
           />
         ),
+        style: {
+          color: "bg-[#8000807a]",
+        },
       };
       break;
     default:
@@ -79,7 +89,11 @@ const Widget = ({ type }) => {
   }
 
   return (
-    <div className="widget grow text-nowrap shadow shadow-gray-400 bg-white  justify-between p-3">
+    <div
+      className={`widget grow text-nowrap shadow shadow-gray-400 bg-white  justify-between p-3 ${
+        data.style.color
+      }`}
+    >
       <div className="left">
         <span className="title">{data.title}</span>
         <span className="counter">

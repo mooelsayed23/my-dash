@@ -8,7 +8,7 @@ aside {
   flex-shrink: 0;
   overflow-y: auto;
   color: rgb(0, 0, 0);
-  background-color: #ffffff;
+  background: linear-gradient(to right, #e6f4ff, #edf9ff);
   box-shadow: 1px 0px 3px #919191;
   top: calc($header-height);
   z-index: 8;

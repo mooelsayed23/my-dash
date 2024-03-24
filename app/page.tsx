@@ -9,9 +9,9 @@ import { MdDashboard } from "react-icons/md";
 export default function Home() {
   return (
     <main className=" bg-gray-100 grow px-2 xs:px-5 sm:px-10">
-      <p className=" sm:my-4 lg:my-5 text-3xl flex items-center font-black"><MdDashboard/>DashBoard</p>
+      <p className="hidden sm:my-4 lg:my-5 text-3xl sm:flex items-center font-black"><MdDashboard/>DashBoard</p>
       {/* Widget */}
-      <div className="">
+      <div className="mt-2 xs:mt-5 sm:mt-0">
         <div className="grow flex flex-wrap gap-5 mb-5">
           <Widget type="user" />
           <Widget type="order" />
@@ -22,7 +22,7 @@ export default function Home() {
         </div>
       </div>
       {/* Featured Charbar */}
-      <div className="flex flex-wrap gap-3 mt-10">
+      <div className="flex flex-wrap gap-5 mt-10">
         <Charbar />
         <Featured />
       </div>

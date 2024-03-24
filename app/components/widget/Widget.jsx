@@ -80,7 +80,7 @@ const Widget = ({ type }) => {
           />
         ),
         style: {
-          color: "bg-[#8000807a]",
+          color: "bg-[#80008055]",
         },
       };
       break;

@@ -51,8 +51,8 @@ const Massege = () => {
       <div className="">
         <div
           className={`massege mr-2 pt-0 absolute shadow-lg  bg-white z-20 mt-8 rounded-lg 
-        -right-[120px] sm:right-0 min-w-64 xs:min-w-72 sm:min-w-80 md:min-w-96 max-h-[500px] overflow-auto ${
-          show ? "block absolute right-0" : "hidden"
+        -right-[130px] md:right-0 min-w-64 xs:min-w-72 sm:min-w-80 md:min-w-96 max-h-[500px] overflow-auto ${
+          show ? "block absolute" : "hidden"
         }`}
         >
           <div className="flex items-center justify-between  px-4 sticky top-0 bg-white shadow py-3">

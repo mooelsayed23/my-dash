@@ -34,7 +34,7 @@ const Header = () => {
 
       <header className={`w-full bg-white ${headstyles.header}`}>
         <div
-          className={` flex justify-between w-11/12 mx-auto items-center`}
+          className={` flex justify-between w-full px-10 mx-auto items-center`}
         >
           <div className="h-full flex items-center">
             <div
@@ -49,7 +49,7 @@ const Header = () => {
           </div>
 
           <div className="flex justify-center items-center flex-grow">
-            <div className="search border rounded-md justify-between items-center hidden sm:flex ms-7">
+            <div className="search border rounded-md justify-between items-center hidden sm:flex ms-10">
               <Search id="search" />
             </div>
 

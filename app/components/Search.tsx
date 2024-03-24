@@ -20,7 +20,7 @@ const Search: React.FC<SearchProps> = ({ id }) => {
         id={id}
         type="text"
         placeholder="Search..."
-        className={`border-0 outline-0 rounded-s-md py-2 bg-transparent bg-slate-300  ms-3 xs:flex ${
+        className={`border-0 outline-0 rounded-s-md py-2 bg-white ps-3 xs:flex ${
           show ? "flex justify-end" : "hidden"
         }`}
       />

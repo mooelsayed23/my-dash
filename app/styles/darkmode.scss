@@ -51,6 +51,10 @@ $dark-color: rgb(31, 31, 31);
         }
     }
 
+    .massege ul li {
+        background-color: #5b5b5b;
+    }
+
     .natifgation,
     .avater {
         background-color: $dark-color;
@@ -62,13 +66,9 @@ $dark-color: rgb(31, 31, 31);
             background-color: $dark-color;
         }
 
-        li:first-child,
-        li:last-child {
-            color: white;
-            background: #3a3a3a;
-        }
 
-        li:hover:not(li:first-child) {
+
+        li:hover {
             * {
                 background: #b7b7b7 !important;
                 color: #000;
@@ -138,18 +138,24 @@ $dark-color: rgb(31, 31, 31);
     .z-10.inline-flex.flex-col.items-center.justify-center.subpixel-antialiased.outline-none.box-border.text-small.bg-content1.rounded-large.shadow-medium.w-full.p-1.min-w-\[200px\] {
         background: $dark-color;
     }
-    .health{
+
+    .health {
         background: $dark-color;
         color: aliceblue;
-        a,li,span.text-black{
+
+        a,
+        li,
+        span.text-black {
             background: $dark-color;
-        color: aliceblue;
+            color: aliceblue;
         }
-        div.bg-white{
+
+        div.bg-white {
             background-color: #444444;
             color: whitesmoke;
         }
-        div.text-3xl{
+
+        div.text-3xl {
             color: whitesmoke;
         }
     }

@@ -5,7 +5,7 @@ import "./featured.scss";
 
 const Featured = () => {
   return (
-    <div className="featured shadow shadow-gray-400 bg-white grow md:grow-0">
+    <div className="featured shadow shadow-gray-400 bg-white grow md:grow-0 w-3/6">
       <div className="top">
         <h1 className="title">Total Revenue</h1>
         <MoreVertIcon fontSize="small" />

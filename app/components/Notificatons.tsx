@@ -182,23 +182,23 @@ const Notificatons = () => {
         ></button>
         <div>
           <ul
-            className={`mt-8 mr-2 pr-1 shadow-xl border md:pt-2  ${
+            className={`mt-8 mr-1 pr-1 shadow-xl border bg-gray-50 md:pt-2  ${
               show
                 ? "natifgation px-1 block absolute -right-16 sm:right-0 z-20 rounded space-y-3 list-none  min-w-64 xs:min-w-72 sm:min-w-80 md:min-w-96 max-h-[500px] bg-white text-slate-800"
                 : "hidden"
             }
           ${vall || count === 1 ? "overflow-y-auto" : "overflow-y-hidden"}`}
           >
-            <li className=" py-1 flex justify-between items-center mt-2 mb-3">
+            <div className=" py-1 flex justify-between items-center mt-2 mb-3">
               <p className="w-5/6 text-xl mx-auto ms-1 ">Notificatons</p>
               <div className="w-1/6 text-xl flex justify-end pr-1 cursor-pointer">
                 <RxDotsHorizontal />
               </div>
-            </li>
+            </div>
             {usersData.map((user, index) => (
               <li
                 key={index}
-                className="w-full hover:bg-gray-50 cursor-pointer py-1
+                className="w-full hover:bg-gray-200 cursor-pointer py-1
                  flex items-stert text-black flex-wrap justify-between items-start "
               >
                 <a href="/" className="flex-shrink-0 w-1/6 self-center">
@@ -210,13 +210,15 @@ const Notificatons = () => {
                     height={100}
                   />
                 </a>
-                <span className="text-gray-500 text-sm mb-1.5 ps-2 w-4/6">
+                <span className="text-gray-500 text-sm mb-1.5 ps-2 w-4/6 ">
                   <a href="/" className="font-semibold text-gray-900">
                     {user.name}
                   </a>{" "}
                   and{" "}
                   <span className="font-medium text-gray-900">5 others</span>{" "}
+                  <p className=" whitespace-nowrap overflow-hidden text-ellipsis" title={user.description}>
                   {user.description}
+                  </p>
                 </span>
                 <span className="h-1/6 text-sm text-slate-400 pr-1">
                   {index + 1 + " min"}

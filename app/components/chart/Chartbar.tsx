@@ -43,16 +43,17 @@ export default function BarAnimation() {
     }
     setSeriesNb(newValue);
   };
-
+  const colors = ['#007bff', '#00aaff'];
   return (
-    <div className="barChart ps-2">
-        <BarChart
-          height={300}
-          series={series
-            .slice(0, seriesNb)
-            .map((s) => ({ ...s, data: s.data.slice(0, itemNb) }))}
-          skipAnimation={skipAnimation}
-        />
+    <div className="barChart ps-2 w-3/6">
+      <BarChart
+        height={300}
+        series={series
+          .slice(0, seriesNb)
+          .map((s) => ({ ...s, data: s.data.slice(0, itemNb) }))}
+        colors={colors}
+        skipAnimation={skipAnimation}
+      />
       <FormControlLabel
         className="ms-1"
         checked={skipAnimation}

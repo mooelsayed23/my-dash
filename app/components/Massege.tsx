@@ -50,7 +50,7 @@ const Massege = () => {
       ></button>
       <div className="">
         <div
-          className={`massege mr-2 pt-0 absolute shadow-lg bg-white  z-20 mt-8 rounded-lg 
+          className={`massege mr-2 pt-0 absolute shadow-lg  bg-white z-20 mt-8 rounded-lg 
         -right-[120px] sm:right-0 min-w-64 xs:min-w-72 sm:min-w-80 md:min-w-96 max-h-[500px] overflow-auto ${
           show ? "block absolute right-0" : "hidden"
         }`}
@@ -66,11 +66,11 @@ const Massege = () => {
               Mark as read
             </i>
           </div>
-          <ul className="divide-y px-1">
+          <ul className="divide-y px-1 bg-gray-50">
             {messagesData.map((message, index) => (
               <li
                 key={index}
-                className="py-4 px-4 flex items-center hover:bg-gray-50 text-black text-sm cursor-pointer"
+                className="py-4 px-4 flex items-center hover:bg-gray-200 text-black text-sm cursor-pointer"
               >
                 <Image
                   src={message.image}

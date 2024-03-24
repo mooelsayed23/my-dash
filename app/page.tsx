@@ -12,12 +12,12 @@ export default function Home() {
       <p className="hidden sm:my-4 lg:my-5 text-3xl sm:flex items-center font-black"><MdDashboard/>DashBoard</p>
       {/* Widget */}
       <div className="mt-2 xs:mt-5 sm:mt-0">
-        <div className="grow flex flex-wrap gap-5 mb-5">
+        <div className="grow flex flex-wrap gap-5 mb-5 justify-evenly">
           <Widget type="user" />
           <Widget type="order" />
-        </div>
-        <div className="flex flex-wrap grow gap-5">
           <Widget type="earning" />
+        </div>
+        <div className="flex flex-wrap grow gap-5 justify-evenly">
           <Widget type="balance" />
         </div>
       </div>

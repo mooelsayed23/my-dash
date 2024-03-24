@@ -39,7 +39,7 @@ const Darkmode = () => {
             />
           ) : (
             <BsMoonStars
-              className="icon   size-7 border-b-[#65676b] text-gray-600"
+              className="icon   size-7 border-b-[#65676b] "
               onClick={toggleMode}
             />
           )}

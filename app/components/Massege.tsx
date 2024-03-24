@@ -38,7 +38,7 @@ const Massege = () => {
   return (
     <div className=" relative flex items-center">
       <button onClick={() => setshow(!show)} className="item relative">
-        <MdChatBubbleOutline className="icon size-7 text-slate-600" />
+        <MdChatBubbleOutline className="icon size-7 text-black" />
       </button>
       <button
         onClick={() => setshow(false)}

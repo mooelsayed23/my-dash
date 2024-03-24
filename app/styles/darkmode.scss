@@ -1,16 +1,20 @@
 $dark-color: rgb(31, 31, 31);
+$dark-text: #d4d4d4;
 
 .darkmode {
     background-color: $dark-color;
-    color: aliceblue;
+    color: $dark-text;
 
     .top-header,
     header {
-        background-color: $dark-color;
+        background: $dark-color !important;
+        svg{
+            color: $dark-text;
+        }
     }
 
     .MuiBox-root * {
-        color: #fff;
+        color: $dark-text;
     }
 
     .massege,
@@ -18,17 +22,17 @@ $dark-color: rgb(31, 31, 31);
     .barChart,
     .MuiBox-root {
         background: $dark-color;
-        color: rgb(255, 255, 255);
+        color: $dark-text;
 
 
 
         text {
-            fill: #ffffff !important;
+            fill: $dark-text !important;
         }
 
         h3,
         h2 {
-            color: rgb(255, 255, 255);
+            color: $dark-text;
         }
 
         .sticky,
@@ -66,8 +70,6 @@ $dark-color: rgb(31, 31, 31);
             background-color: $dark-color;
         }
 
-
-
         li:hover {
             * {
                 background: #b7b7b7 !important;
@@ -89,7 +91,7 @@ $dark-color: rgb(31, 31, 31);
     }
 
     main {
-        background-color: #121212;
+        background: #121212 !important;
 
         .widget,
         .featured,

@@ -90,7 +90,7 @@ const Widget = ({ type }) => {
 
   return (
     <div
-      className={`widget grow text-nowrap shadow shadow-gray-400 bg-white  justify-between p-3 ${
+      className={`widget grow text-nowrap shadow shadow-gray-400  justify-between p-3 ${
         data.style.color
       }`}
     >

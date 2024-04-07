@@ -73,7 +73,7 @@ export default function BarAnimation() {
         Number of items {itemNb}
       </Typography>
       <Slider
-        className="text-slate-400 w-40 ms-6"
+        className="text-slate-400 w-40 ms-3"
         value={itemNb}
         onChange={handleItemNbChange}
         valueLabelDisplay="auto"
@@ -89,7 +89,7 @@ export default function BarAnimation() {
         Number of series {seriesNb}
       </Typography>
       <Slider
-        className="text-slate-400 w-40 ms-6"
+        className="text-slate-400 w-40 ms-3"
         value={seriesNb}
         onChange={handleSeriesNbChange}
         valueLabelDisplay="auto"

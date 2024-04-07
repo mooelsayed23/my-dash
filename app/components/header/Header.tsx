@@ -8,29 +8,32 @@ import { useSelector } from "react-redux";
 import { selectIsVisible } from "@/redux/feature/showDashSlice";
 import Darkmode from "../darkMode/Darkmode";
 import Avatar from "../Avatar";
+import { selectCount } from "@/redux/feature/showside";
 
 const Header = () => {
   const dispatch = useDispatch();
-
+  const count = useSelector(selectCount);
   const dashvisbilty = useSelector(selectIsVisible);
   return (
     <>
-      <div
-        className={`w-full top-header relative z-10  bg-white rounded-md sm:hidden flex items-center justify-between p-2 ${
-          dashvisbilty ? "" : "w-full justify-center"
-        } ${headstyles.topheader}`}
-      >
-        <p className={`${dashvisbilty ? "" : "hidden"} xs:flex w-6/12`}>
-          Dashboard
-        </p>
+      {!count && (
         <div
-          className={`" border flex rounded-md justify-center" ${
-            dashvisbilty ? "" : "w-full justify-end"
-          }`}
+          className={`w-full top-header relative z-10  bg-white rounded-md sm:hidden flex items-center justify-between p-2 ${
+            dashvisbilty ? "" : "w-full justify-center"
+          } ${headstyles.topheader}`}
         >
-          <Search id="topsearch" />
+          <p className={`${dashvisbilty ? "" : "hidden"} xs:flex w-6/12`}>
+            Dashboard
+          </p>
+          <div
+            className={`" border flex rounded-md justify-center" ${
+              dashvisbilty ? "" : "w-full justify-end"
+            }`}
+          >
+            <Search id="topsearch" />
+          </div>
         </div>
-      </div>
+      )}
 
       <header className={`w-full bg-white ${headstyles.header}`}>
         <div

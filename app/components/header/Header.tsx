@@ -18,11 +18,11 @@ const Header = () => {
     <>
       {!count && (
         <div
-          className={`w-full top-header relative z-10  bg-white rounded-md sm:hidden flex items-center justify-between p-2 ${
+          className={`min-w-full top-header relative z-10  bg-white rounded-md sm:hidden flex items-center justify-between p-2 ${
             dashvisbilty ? "" : "w-full justify-center"
           } ${headstyles.topheader}`}
         >
-          <p className={`${dashvisbilty ? "" : "hidden"} xs:flex w-6/12`}>
+          <p className={`${dashvisbilty ? "" : "hidden"} text-sm sm:text-base xs:flex w-6/12`}>
             Dashboard
           </p>
           <div

@@ -15,11 +15,13 @@ import { useSelector } from "react-redux";
 import { selectCount } from "@/redux/feature/showside";
 import { useState } from "react";
 import { PiUserSquareBold } from "react-icons/pi";
+import { useDispatch } from "react-redux";
+import { toggle } from "@/redux/feature/showside";
 
 function Sidebar() {
   const count = useSelector(selectCount);
   const [selectedItem, setSelectedItem] = useState(0);
-
+  const dispatch = useDispatch();
   const handleItemClick = (index: number) => {
     setSelectedItem(index);
   };
@@ -28,7 +30,7 @@ function Sidebar() {
       className={`text-xl pt-6
       ${count ? "flex bslg:hidden" : "hidden bslg:flex"}`}
     >
-      <ul className="w-full flex flex-col px-7">
+      <ul className="w-full flex flex-col px-7 z-50">
         <div>
           <div>
             <Link href="/">
@@ -145,6 +147,7 @@ function Sidebar() {
           </div>
         </div>
       </ul>
+      <div className="fixed top-0 left-0 min-w-full min-h-full z-40" onClick={()=>dispatch(toggle())}></div>
     </aside>
   );
 }

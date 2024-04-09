@@ -147,7 +147,7 @@ function Sidebar() {
           </div>
         </div>
       </ul>
-      <div className="fixed top-0 left-0 min-w-full min-h-full z-40" onClick={()=>dispatch(toggle())}></div>
+      <div className="fixed top-0 left-0 min-w-full min-h-full z-40 bslg:hidden " onClick={()=>dispatch(toggle())}></div>
     </aside>
   );
 }
